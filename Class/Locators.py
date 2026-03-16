@@ -129,14 +129,14 @@ driver.get("https://amazon.in/")
 sleep(4)
 
 # Using text - text() ->
-driver.find_element(By.XPATH,'//a[contains(text(),"Mobiles")]').click()
+# driver.find_element(By.XPATH,'//a[contains(text(),"Mobiles")]').click()
 
 # Another syntax - "."
-driver.find_element(By.XPATH,'//a[contains(.,"Mobiles")]').click()
+# driver.find_element(By.XPATH,'//a[contains(.,"Mobiles")]').click()
 
 
 # We can also find element using XPATH using indexing
-
+driver.find_element(By.XPATH, '//li[@class="navFooterDescItem"][2]').click()
 
 
 
