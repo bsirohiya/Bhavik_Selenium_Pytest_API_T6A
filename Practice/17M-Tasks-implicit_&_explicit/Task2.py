@@ -11,8 +11,14 @@ driver.maximize_window()
 
 driver.get("https://demoqa.com/webtables")
 
-wait = WebDriverWait(driver, 10)
-print(wait.until(EC.visibility_of_element_located((By.XPATH, '//td[.="Kierra"]/../td[5]'))).text)
+wait = WebDriverWait(driver, 100)
+
+name = wait.until(EC.visibility_of_element_located((By.XPATH, '(//tr)[5]//td[1]'))).text
+salary = wait.until(EC.visibility_of_element_located((By.XPATH, '(//tr)[5]//td[1]/../td[5]'))).text
+print(f"{name}'s salary is {salary}")
+#OR
+
+# print(wait.until(EC.visibility_of_element_located((By.XPATH, '//td[.="Kierra"]/../td[5]'))).text)
 
 # OR
 
