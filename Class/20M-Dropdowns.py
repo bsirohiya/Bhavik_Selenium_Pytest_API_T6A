@@ -47,7 +47,7 @@ driver.find_element(By.XPATH, '//option[@value="dance"]').click()
 driver.find_element(By.XPATH, '//option[@value="music"]').click()
 
 # NOW WE CAN DESELECT BY SAME 3 OPTIONS
-option.deselect_by_visible_text("dance")
+option.deselect_by_visible_text("Dance")
 option.deselect_by_value("dance")
 option.deselect_by_index(0)'''
 
